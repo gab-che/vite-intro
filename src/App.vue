@@ -1,9 +1,11 @@
 <script>
+import UserData from "./components/UserData.vue"
 export default{
+  components: {UserData},
   data(){
     return{
       message: "Hello Vite"
-    }
+    };
   }
 }
 </script>
@@ -11,6 +13,7 @@ export default{
 <template>
   <h1>Vite Intro</h1>
   <p>{{message}}</p>
+  <UserData></UserData>
 </template>
 
 <style scoped>
